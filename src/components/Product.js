@@ -1,0 +1,17 @@
+import React from 'react';
+import data from './data';
+
+export default function Product (props) {
+    const {product,onAdd}=props;
+    return (
+        <div>
+            <img className="small" src={product.image} alt={product.name}></img>
+            <h3>{product.name}</h3>
+            <div>RS.{product.price}</div>
+            <div>
+                <button onClick={() => onAdd(product)} >Add To Cart</button>
+            </div>
+        </div>
+    )
+}
+

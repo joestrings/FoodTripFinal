@@ -25,6 +25,8 @@ class Login extends React.Component {
   
  
   onSubmit = (e) =>{
+    const lock1 = "true"
+    localStorage.setItem("lock1",lock1);
     let { history } = this.props
     let ele;
     e.preventDefault()

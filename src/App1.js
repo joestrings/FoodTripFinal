@@ -11,7 +11,7 @@ import { Link, Switch, Route, UseHistory, UseLocation, useHistory, useLocation }
 import { View } from './View';
 
 
-function App1() {
+function App1(props) {
   const { products } = data;
   localStorage.setItem("savedData",JSON.stringify(data));
   const [cartItems, setCartItems] = useState([]);
@@ -40,12 +40,16 @@ function App1() {
     }
   };
   
+  const delLock = () => {
+    const lock = "false"
+   localStorage.setItem("lock1",lock)
+  };
   
    return (
     <div className="App" >
       <div className="row">
       <nav className="topnav1" > 
-            <Link to="/login" className='btn btn-outline-danger' style={{marginRight:"20px"}}>Logout</Link>
+            <Link to="/login" className='btn btn-outline-danger' style={{marginRight:"20px"}} onClick={() => delLock()}>Logout</Link>
           </nav>
         <Main onAdd={onAdd} products={products}></Main>
         <Basket onAdd={onAdd} onRemove={onRemove} cartItems={cartItems}></Basket>

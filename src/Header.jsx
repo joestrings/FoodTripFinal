@@ -25,32 +25,49 @@ import { FaArrowAltCircleRight } from "react-icons/fa";
 import { FaArrowAltCircleLeft } from "react-icons/fa";
 
 import { Link, Switch, Route, UseHistory, UseLocation, useHistory, useLocation } from "react-router-dom";
+import { useState } from 'react';
 
-function Header() {
+function Header(props) {
 
+  const[lock,useLock]=useState("false")
+  localStorage.setItem("lock",lock)
+  console.log({lock})
+  
   const history=useHistory();
   const location = useLocation();
-  console.log(`Location Details: ${location}` );
-  console.log(`History Details:  ${history}`);
+
 
 
   const goForward = () => {
+    if(localStorage.getItem('lock')=="false"&&localStorage.getItem('lock1')=="true")
+    {
     history.goForward();
+    }
+    else
+    {
+    alert("please login")
+    }
   }
 
   const goBack = () => {
+    if(localStorage.getItem('lock')=="false"&&localStorage.getItem('lock1')=="true")
+    {
     history.goBack();
+    }
+    else{
+    alert("please login")
+    }
   }
     return (
   
       <div className="App">
         <nav className="topnav" > 
-        <Link className='Link'> <button onClick={goBack}><FaArrowAltCircleLeft/></button> </Link> 
+        <Link className='Link'> <button onClick={goBack} style={{width:50}}><FaArrowAltCircleLeft/></button> </Link> 
             <Link to="/" className='Link'>Food-Trip.Com</Link> 
             {/* <a href="example.com">
                  <FaShoppingCart /> 
              </a>  */}
-             <Link className='link1'> <button onClick={goForward}><FaArrowAltCircleRight/></button> </Link> 
+             <Link className='link1'> <button onClick={goForward} style={{width:50}}  ><FaArrowAltCircleRight/></button> </Link> 
             <Link to="/reg" className='link1'>Register</Link>
             <Link to="/Admin" className='link1'>Admin</Link> 
             <Link to="/login" className='link1'>Login</Link> 

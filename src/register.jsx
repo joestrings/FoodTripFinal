@@ -42,8 +42,11 @@ class Register extends React.Component {
     let olddata = localStorage.getItem('formdata');
     if(olddata==null){
       olddata = []
+
       olddata.push(ob)
+
       localStorage.setItem('formdata', JSON.stringify(olddata));
+
       history.push({ pathname: "/Welcome" });
     }else{
       let oldArr = JSON.parse(olddata)
@@ -69,7 +72,7 @@ class Register extends React.Component {
         <div id="main-registration-container" style={myStyle}>
       <div id="register1">
         <div className="form-group">
-        <h3>Registration Page</h3>
+        <h1>Registration Page</h1>
           <label>Name</label>
           <input type="text" className="form-control" autoFocus placeholder='Username'value={this.state.name} onChange={this.onChangeName} required />
         </div>

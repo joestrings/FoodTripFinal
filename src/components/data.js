@@ -37,8 +37,14 @@ const data={
         id:'9',
         name:'Nuggets',
         price:200,
-        image:'https://media.istockphoto.com/photos/chicken-nuggets-in-plate-on-rustic-background-picture-id1212816947?k=20&m=1212816947&s=170667a&w=0&h=LxK6g2gFVwe-Q1indRiVl_zD7nQBuKKasFuowFZkqFU='
-        }       
+        image:'https://media.istockphoto.com/photos/chicken-nuggets-in-plate-on-rustic-background-picture-id1212816947?k=20&m=1212816947&s=170667a&w=0&h=LxK6g2gFVwe-Q1indRiVl_zD7nQBuKKasFuowFZkqFU='},
+
+        {
+            id:'9',
+            name:'Nuggets',
+            price:200,
+            image:'https://media.istockphoto.com/photos/chicken-nuggets-in-plate-on-rustic-background-picture-id1212816947?k=20&m=1212816947&s=170667a&w=0&h=LxK6g2gFVwe-Q1indRiVl_zD7nQBuKKasFuowFZkqFU='
+            }       
              
     ]
     

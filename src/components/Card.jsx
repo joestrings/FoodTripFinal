@@ -140,12 +140,18 @@ class Card extends React.Component {
       padding:60,
   };
 
+  
+  const delLock = () => {
+    const lock = "false"
+   localStorage.setItem("lock1",lock)
+  };
+
     return (
         
     <div>
      <div>
      <nav className="topnav1" > 
-            <Link to="/login" className='btn btn-outline-danger' style={{marginRight:"20px"}}>Logout</Link>
+            <Link to="/login" className='btn btn-outline-danger' style={{marginRight:"20px"}} onClick={() => delLock()}>Logout</Link>
           </nav>
      
 

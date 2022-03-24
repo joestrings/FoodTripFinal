@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/foodtrip/static/css/main.c53f8261.css",
+    "main.js": "/foodtrip/static/js/main.719ee36c.js",
+    "static/js/787.0eb60704.chunk.js": "/foodtrip/static/js/787.0eb60704.chunk.js",
+    "static/media/user1.jpg": "/foodtrip/static/media/user1.e95e8d99e37c6316858b.jpg",
+    "static/media/logo.png": "/foodtrip/static/media/logo.3456ada56f78af4e52f0.png",
+    "static/media/bg.jpg": "/foodtrip/static/media/bg.e03e4f768cce025f65d5.jpg",
+    "static/media/logo.svg": "/foodtrip/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/foodtrip/index.html",
+    "main.c53f8261.css.map": "/foodtrip/static/css/main.c53f8261.css.map",
+    "main.719ee36c.js.map": "/foodtrip/static/js/main.719ee36c.js.map",
+    "787.0eb60704.chunk.js.map": "/foodtrip/static/js/787.0eb60704.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c53f8261.css",
+    "static/js/main.719ee36c.js"
+  ]
+}
